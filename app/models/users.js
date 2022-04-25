@@ -21,10 +21,10 @@ class User{
     }
 
     set setUsername(username){
-        return this.username = "Fernandito"
+        return this.username = username
     }
     set setBio(bio){
-        return this.bio = "NewBio"
+        return this.bio = bio //Declara que el contenido que recibe sera el nuevo valor
     }
 }
 
