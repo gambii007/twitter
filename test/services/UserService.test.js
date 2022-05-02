@@ -10,4 +10,12 @@ describe("Unit Test for User Service", () => {
       expect(user.name).toBe("fernando")
       expect(user.name).not.toBeUndefined()
     });
+    test('2) Get all user data in a list', () =>{
+        const user = UserService.create(1, "gambito","fernando")
+        const userInfoInList = UserService.getInfo(user)
+        expect(userInfoInList[0]).toBe(1)
+        expect(userInfoInList[1]).toBe("gambito")
+        expect(userInfoInList[2]).toBe("fernando")
+        expect(userInfoInList[3]).toBe("Sin bio")
+    })
 })
