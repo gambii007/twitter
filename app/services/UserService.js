@@ -10,6 +10,10 @@ class UserService{
     static updateUserUsername(user, name){
         user.setUsername = name
     }
+    static getAllUsernames(users){        
+        const userUsernames = users.map( user => user.username)
+        return userUsernames
+    }
 }
 
 module.exports = UserService
